@@ -1,0 +1,18 @@
+.wrapper{
+    position:absolute;
+    width:200px;
+    height:30px;
+    top:80px;
+    left: calc(100vw - 213px);
+    background-color: rgb(255, 47, 0);
+    border: 3px white solid;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.wrapper p{
+    margin:auto;
+    padding: 0;
+    color:rgb(251, 249, 172);
+    font-weight: bold;
+}
