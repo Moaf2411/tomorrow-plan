@@ -72,3 +72,16 @@
 
 
 
+@media screen and (max-width:450px) {
+    .logo{
+        font-size: 20px;
+    }
+    .navbar{
+        flex-direction:column-reverse;
+        width:100px;
+        height: 80px;
+        left:calc(100vw - 110px);
+
+    }
+    
+}
