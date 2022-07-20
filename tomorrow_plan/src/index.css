@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--selectedBack);
+  transition: background-color 1s ease;
+  filter:bacground-color blur(20px);
 }
 
 code {
@@ -25,7 +28,9 @@ code {
   --selectedFont:#F0FFFF	;
   --whiteFont:#F0FFFF	;
 
-  
+  --selectedBack:white;
+  --light: white;
+  --dark:rgba(9, 6, 27, 0.943);
 
   
 }

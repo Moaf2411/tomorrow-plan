@@ -7,6 +7,7 @@ import Notif from './components/Notif.js';
 import {Routes, Route } from 'react-router-dom'
 import React from 'react';
 import Preview from './components/Preview';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         </React.Fragment>} />
         <Route path='/preview' element={<Preview/>} />
       </Routes>
+
+      <Footer />
       
     </div>
   );

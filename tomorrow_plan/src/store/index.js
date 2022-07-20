@@ -65,13 +65,24 @@ const planSlice = createSlice({
 //**************************** notifications ******************************
 const notificationSlice = createSlice({
     name:'notification',
-    initialState:{notif:false,message:''},
+    initialState:{notif:false,message:'',mode:'light'},
     reducers:{
         toggleNotif(state,action){
             state.notif = action.payload
         },
         setMessage(state,action){
             state.message = action.payload
+        },
+        toggleMode(state,action){
+            state.mode = action.payload
+            if(action.payload == 'light'){
+                let selected = getComputedStyle(document.documentElement).getPropertyValue('--light')
+                document.documentElement.style.setProperty('--selectedBack',selected)
+            }
+            else{
+                let selected = getComputedStyle(document.documentElement).getPropertyValue('--dark')
+                document.documentElement.style.setProperty('--selectedBack',selected)
+            }
         }
     }
 })

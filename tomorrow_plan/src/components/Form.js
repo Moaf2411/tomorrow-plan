@@ -20,7 +20,7 @@ const Form = props => {
         let form = e.target.parentElement
         let children = form.children
         let ok = true
-        if(name.current.value == '' || des.current.value == ''){
+        if(name.current.value == ''){
             setErr(styles.error)
             props.raise('an error has occured!') // error message
             ok = false
@@ -107,28 +107,28 @@ const Form = props => {
 
         <form className={styles.form}> 
                
-                <label>از</label>
+                <label>from</label>
                 <div>
-                    <label className={styles.time} >ساعت</label>
+                    <label className={styles.time} >hour</label>
                     <input ref={from_hour} className={err} type='number' placeholder='0' min='0' max='23' defaultValue='0' />
-                    <label className={styles.time}>دقیقه</label>
+                    <label className={styles.time}>minute</label>
                     <input ref={from_minute} className={err} type='number' placeholder='0' min='0' max='59' defaultValue='0'/>
                 </div>
 
-                <label>تا</label>
+                <label>until</label>
                 <div>
-                    <label  className={styles.time}>ساعت</label>
+                    <label  className={styles.time}>hour</label>
                     <input ref={to_hour} className={err} type='number' placeholder='0' min='0' max='23' defaultValue='0'/>
-                    <label className={styles.time}>دقیقه</label>
+                    <label className={styles.time}>minute</label>
                     <input ref={to_minute} className={err} type='number' placeholder='0' min='0' max='59' defaultValue='0'/>
                 </div>
             
             
-            <label>نام فعالیت</label>
+            <label>name of activity</label>
             
             <input ref={name} type='text' placeholder='name' className={err}/>
             
-            <label>شرح فعالیت</label>
+            <label>activity description</label>
             
             <textarea ref={des} placeholder='description of your activity' className={err}/>
             
