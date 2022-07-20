@@ -29,6 +29,7 @@
     font-size: 8px;
     padding-top: 1px;
     color:aliceblue;
+    cursor: pointer;
 }
 
 .light.act{
@@ -36,6 +37,7 @@
 }
 
 .dark{
+    cursor: pointer;
     font-size: 8px;
     padding-top: 1px;
     border-radius: 20px;
